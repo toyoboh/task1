@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電卓 課題Lv.1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <table border="2">
+    <tr>
+      <td colspan="4"><input type="text" value="0" id="wind"></td>   
+    </tr>
+
+    <tr>
+      <td colspan="2"><input type="button" onclick="number('CE')" value ="CE" class="input-w"></td>
+      <td><input type="button" onclick="allClear()" value="C" class="input-w"></td>
+      <td><input type="button" onclick="operator('*')" value="×" class="input-w"></td>
+    </tr>
+
+    <tr>
+      <td><input type="button" onclick="number(7)" value="7" class="input-w"></td>
+      <td><input type="button" onclick="number(8)" value="8" class="input-w"></td>
+      <td><input type="button" onclick="number(9)" value="9" class="input-w"></td>
+      <td><input type="button" onclick="operator('/')" value="÷" class="input-w"></td>
+    </tr>
+
+    <tr>
+      <td><input type="button" onclick="number(4)" value="4" class="input-w"></td>
+      <td><input type="button" onclick="number(5)" value="5" class="input-w"></td>
+      <td><input type="button" onclick="number(6)" value="6" class="input-w"></td>
+      <td><input type="button" onclick="operator('-')" value="−" class="input-w"></td>
+    </tr>
+
+    <tr>
+      <td><input type="button" onclick="number(1)" value="1" class="input-w"></td>
+      <td><input type="button" onclick="number(2)" value="2" class="input-w"></td>
+      <td><input type="button" onclick="number(3)" value="3" class="input-w"></td>
+      <td><input type="button" onclick="operator('+')" value="＋" class="input-w"></td>
+    </tr>
+
+    <tr>
+      <td><input type="button" onclick="number(0)" value="0" class="input-w"></td>
+      <td><input type="button" onclick="number('.')" value="." class="input-w"></td>
+      <td><input type="button" onclick="original()" value="⭐️" class="input-w"></td>
+      <td><input type="button" onclick="operator('=')" value="＝" class="input-w"></td>
+    </tr>
+  </table>
+
+<script src="foo.js"></script>
+</body>
+</html>
